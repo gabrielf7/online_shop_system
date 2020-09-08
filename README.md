@@ -28,9 +28,9 @@
 
 loading...
 
-## Criado por 
+## Create by 
 
-Create by [@gabrielf7](https://github.com/gabrielf7)
+---> [@gabrielf7](https://github.com/gabrielf7)
 
 ### Please follow github and join us!
 Thanks to visiting me and good coding!
