@@ -1,0 +1,187 @@
+// My theme
+$my1-color: #2a9d8f;
+$my2-color: #43535f;
+$my3-color: #04d361;
+$my4-color: #cbf3f0;
+$my5-color: #284b63;
+$my6-color: #6842c2;
+$my7-color: #00bbf9;
+$my8-color: #b7f8f8;
+
+
+// Color system
+
+$white:    #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black:    #000 !default;
+
+$grays: () !default;
+$grays: map-merge(
+  (
+    "100": $gray-100,
+    "200": $gray-200,
+    "300": $gray-300,
+    "400": $gray-400,
+    "500": $gray-500,
+    "600": $gray-600,
+    "700": $gray-700,
+    "800": $gray-800,
+    "900": $gray-900
+  ),
+  $grays
+);
+
+// $blue:    #007bff;
+
+$blue:    $white !default;
+$indigo:  #6610f2 !default;
+$purple:  #6f42c1 !default;
+$pink:    #e83e8c !default;
+$red:     #dc3545 !default;
+$orange:  #fd7e14 !default;
+$yellow:  #ffc107 !default;
+$green:   #28a745 !default;
+$teal:    #20c997 !default;
+$cyan:    #17a2b8 !default;
+
+$colors: () !default;
+$colors: map-merge(
+  (
+    "blue":       $blue,
+    "indigo":     $indigo,
+    "purple":     $purple,
+    "pink":       $pink,
+    "red":        $red,
+    "orange":     $orange,
+    "yellow":     $yellow,
+    "green":      $green,
+    "teal":       $teal,
+    "cyan":       $cyan,
+    "white":      $white,
+    "gray":       $gray-600,
+    "gray-dark":  $gray-800
+  ),
+  $colors
+);
+
+$primary:       $blue !default;
+$secondary:     $gray-600 !default;
+$success:       $green !default;
+$info:          $cyan !default;
+$warning:       $yellow !default;
+$danger:        $red !default;
+$light:         $gray-100 !default;
+$dark:          $gray-800 !default;
+
+$theme-colors: () !default;
+$theme-colors: map-merge(
+  (
+    "primary":    $primary,
+    "secondary":  $secondary,
+    "success":    $success,
+    "info":       $info,
+    "warning":    $warning,
+    "danger":     $danger,
+    "light":      $light,
+    "dark":       $dark,
+    "my1-color": $my1-color,
+    "my2-color": $my2-color,
+    "my3-color": $my3-color,
+    "my4-color": $my4-color,
+    "my5-color": $my5-color,
+    "my6-color": $my6-color,
+    "my7-color": $my7-color
+  ),
+  $theme-colors
+);
+
+// My CSS for Bootstrap Default CSS
+$body-bg: $white;
+$body-color:  $black;
+
+$modal-content-bg: $my5-color;
+$input-bg:  $my3-color;
+$table-bg: rgba($white, .92);
+$table-dark-accent-bg: rgba($my5-color, .92);
+
+$modal-content-color: $white;
+$table-color: $gray-400;
+$input-color: $white;
+$input-placeholder-color: $white;
+
+// importing the Boostrap
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+// My Css
+
+body {
+  font-family: Arial;
+}
+
+a {
+  text-decoration: none;
+  color:  $my5-color;
+}
+
+.logo {
+  width: 277px;
+  height: 27px;
+}
+
+h1, h2, h3, h4, h5, h6, button {
+  font-family: Arial;
+}
+
+.my_container_main {
+  margin-top: 30px;
+
+  .my-table-sale-1 {
+    height: 400px;
+  }
+  .my-table-sale {
+    height: 305px;
+  }
+
+  .my-button-sale {
+    font-size: 35px;
+  }
+
+  .my-button-search {
+    color: $white;
+    font-weight: lighter;
+    background: linear-gradient(180deg, $my6-color 47%, $white 87%);
+  }
+
+  .my-button-search:hover {
+    // font-weight: bold;
+    color: $white;
+    background: linear-gradient(180deg, $my1-color 47%, $white 87%);
+  }
+  
+  @media (max-width: 800px) {
+    // h3 {
+    //   text-align: center;
+    // }
+    img {
+      align-content: center;
+      height: 300px;
+      width: 300px;
+    }
+
+    
+    .my-button-sale {
+      font-size: 25px;
+    }
+    // button {
+    //   align-content: center;
+    // }
+  }
+}
