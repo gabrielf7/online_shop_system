@@ -12,11 +12,11 @@
   
 </div>
 
-## Tecnologias 
+## Technology 
 
 <div align="center">
   
-  <p> Aqui estão as tecnologias utilizadas neste projeto. </p>
+  <p> Here are the technologies used in this project. </p>
   
 </div>
  
