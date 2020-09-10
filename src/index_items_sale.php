@@ -23,6 +23,17 @@
 
 ?>
 
+<?php
+
+if(!isset($_GET['addnew']) && $_GET['addnew'] == "new_sale_c"){
+  if(isset($_GET['addnew']) && $_GET['addnew'] == "new_s"){
+    $v_id_sale = $_GET['id_sale'];  
+  }
+}else{
+  $v_id_sale = $_GET['id_sale'];
+}
+
+?>
 
 <?php 
 
@@ -38,34 +49,34 @@
 
     <?php
 
-      $last_sale = 
-      " SELECT * FROM tbl_sale
-        WHERE id_client = '$id_client' 
-        AND date_sale = '$date_sale'
-      ";
+      // $last_sale = 
+      // " SELECT * FROM tbl_sale
+      //   WHERE id_client = '$id_client' 
+      //   AND date_sale = '$date_sale'
+      // ";
 
-      $row = mysqli_query($connectiondb, $last_sale);
+      // $row = mysqli_query($connectiondb, $last_sale);
 
-      while($result_row = mysqli_fetch_assoc($row)){
-        $row_s_1 = $result_row["id_sale"];
-        $row_s_2 = $result_row["id_client"];
-        $row_s_3 = $result_row["date_sale"];
+      // while($result_row = mysqli_fetch_assoc($row)){
+      //   $row_s_1 = $result_row["id_sale"];
+      //   $row_s_2 = $result_row["id_client"];
+      //   $row_s_3 = $result_row["date_sale"];
 
-      }
+      // }
 
     ?>
 
     <div class="d-flex d-inline">
       <?php 
-        echo '<p class="text-left mr-lg-1">ID da Venda:' . $row_s_1 .'</p>';
-        echo '<input type="hidden" name="id_sale" value="'. $row_s_1 .'">';
+        echo '<p class="text-left mr-lg-1">ID da Venda:' . $v_id_sale .'</p>';
+        // echo '<input type="hidden" name="id_sale" value="'. $v_id_sale .'">';
       ?>
     
     </div>
     <div class="d-flex justify-content-between">
       <?php
-        echo '<p class="text-left">ID do Cliente: ' . $row_s_2 .'</p>';
-        echo '<p class="text-right">Data da venda: ' . $row_s_3 .'</p>';
+        // echo '<p class="text-left">ID do Cliente: ' . $row_s_2 .'</p>';
+        // echo '<p class="text-right">Data da venda: ' . $row_s_3 .'</p>';
       
       ?>
     
@@ -101,7 +112,7 @@
                   echo '<tr>';
                   echo '<th>' . 
                     '<a class="btn btn-my5-color #paypal" 
-                    href="index_items_sale.php?add=new_trolley&id_product='.$data_items['id_product'].'"
+                    href="index_items_sale.php?addnew=new_s&id_sale='.$v_id_sale.'&add=new_trolley&id_product='.$data_items['id_product'].'"
                     >
                       Adicionar ao carrinho
                     </a>'
@@ -136,7 +147,11 @@
               <?php
 
                 if(count($_SESSION['itens']) == 0){
-                  echo 'Carrinho Vazio' . '</br>';
+                  echo '<tr>';
+                  echo '<td>Carrinho Vazio</td>';
+                  echo '<td>Carrinho Vazio</td>';
+                  echo '<td>Carrinho Vazio</td>';
+                  echo '</tr>';
                 }else{
                   include ('connect_pdo.php');
 
@@ -150,7 +165,7 @@
                     $data_items = $selectdb_items->fetchAll();
 
                     echo '<tr>';
-                    echo '<th>' . $row_s_1 . '</th>';
+                    echo '<th>' . $v_id_sale . '</th>';
                     echo '<td>' . $data_items[0] ["id_product"] . '</td>';
                     echo '<td>' . $quantity . '</td>';
                     echo '</tr>';
@@ -158,7 +173,7 @@
                     array_push(
                       $_SESSION['dados'],
                       array(
-                        'id_sale' => $row_s_1,
+                        'id_sale' => $v_id_sale,
                         'id_product' => $idProduct,
                         'quantity' => $quantity
                       )
@@ -172,7 +187,7 @@
                   echo '</div>';
                   echo '<div class="row justify-content-center">' .
                     '<a class="col-lg-4 col-sm-12 p-3 btn btn-my6-color"
-                    href=""
+                    href="finish.php"
                     >
                       Finalizar Pedidos
                     </a>' . 

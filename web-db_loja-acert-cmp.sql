@@ -132,12 +132,7 @@ CREATE TABLE `tbl_sale` (
   `date_sale` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Extraindo dados da tabela `tbl_sale`
---
-
-INSERT INTO `tbl_sale` (`id_sale`, `id_client`, `date_sale`) VALUES
-(1, 3, '2020-09-02');
+-- --------------------------------------------------------
 
 --
 -- Índices para tabelas despejadas
@@ -209,7 +204,7 @@ ALTER TABLE `tbl_product`
 -- AUTO_INCREMENT de tabela `tbl_sale`
 --
 ALTER TABLE `tbl_sale`
-  MODIFY `id_sale` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id_sale` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- Restrições para despejos de tabelas

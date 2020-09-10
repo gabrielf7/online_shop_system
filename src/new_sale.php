@@ -31,12 +31,26 @@
         $data_db = mysqli_query($connectiondb, $sql_db);
         
         if($data_db == TRUE){
-            include_once ('index_items_sale.php');
+            // require ('index_items_sale.php');
+            $last_sale = 
+            " SELECT * FROM tbl_sale
+                WHERE id_client = '$id_client' 
+                AND date_sale = '$date_sale'
+            ";
+
+            $row = mysqli_query($connectiondb, $last_sale);
+
+            while($result_row = mysqli_fetch_assoc($row)){
+                $row_s_1 = $result_row["id_sale"];
+                $row_s_2 = $result_row["id_client"];
+                $row_s_3 = $result_row["date_sale"];
+
+            }
             ?>
 
-                <!-- <script>
-                    window.location.href="index_items_sale.php";
-                </script> -->
+                <script>
+                    window.location.href="index_items_sale.php?addnew=new_sale_c&id_sale=<?php echo $row_s_1; ?>";
+                </script>
             <?php
 
         }else{
