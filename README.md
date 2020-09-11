@@ -1,6 +1,6 @@
 <div align="center">
   
-  <h2>Online Store inspired system</h2>
+  <h2>Online Shop System</h2>
   
 </div>
 
@@ -8,7 +8,7 @@
 
 <div align="center">
   
-  <p> Online Shop System </p>
+  <p> Online Store inspired system</p>
   
 </div>
 
