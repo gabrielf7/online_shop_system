@@ -11,6 +11,7 @@
     $result_insert->execute();
   
   }
+  unset($_SESSION['itens']);
   echo "STATUS: 200 OK";
 
 ?>

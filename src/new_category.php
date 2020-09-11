@@ -29,19 +29,18 @@
       </script>
 
     <?php
-    }
-    else{
+    }else{
       echo "Ocorreu algum problema. Erro: ".$connectiondb->error;
     }
   }else{
-    ?>
+  ?>
 
-      <script>
-          alert("Categoria já existe, escolha outra.");
-          window.location.href="index.php";
-      </script>
+    <script>
+      alert("Categoria já existe, escolha outra.");
+      window.location.href="index.php";
+    </script>
 
-    <?php
+  <?php
   }
 
 ?>

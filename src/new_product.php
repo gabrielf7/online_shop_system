@@ -30,21 +30,19 @@
       </script>
 
     <?php
-    }
-    else{
+    }else{
       echo "Ocorreu algum problema. Erro: ".$connectiondb->error;
     }
 
   }else{
-    ?>
+  ?>
 
     <script>
       alert("Nome do produto já existe, escolha outro.");
       window.location.href="index.php";
     </script>
 
-    <?php
-
+  <?php
   }
 
 ?>

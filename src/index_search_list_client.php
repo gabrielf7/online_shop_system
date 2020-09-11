@@ -1,8 +1,8 @@
 <?php 
 
-include 'connect.php';
+  include ('connect.php');
 
-require 'my_heard.php';
+  require ('my_heard.php');
 
 ?>
 
@@ -23,27 +23,7 @@ require 'my_heard.php';
       </div>
     </form>
 
-    <?php 
-      // include_once 'connect.php';
-      
-      // $search_cpf_client = filter_input(INPUT_GET, 'term', FILTER_SANITIZE_STRING);
-      
-      // $search_sql_db = "SELECT cpf_client FROM tbl_client WHERE cpf_client LIKE '%".$search_cpf_client."%'";
-      
-      // $search_result = $connectiondb->prepare($search_sql_db);
-      //  $search_result->execute();
-      
-      //  while ($search_client_row = $search_client_row->fetch(PDO::FETCH_ASSOC)){
-        //    $data[] = $search_client_row['cpf_client'];
-        //  }
-        
-        // echo $data;
-        
-    ?>
-    <div class="">
-      <h3 class="col-sm-12 mt-4 mb-4 border-left border-info text-left">Clientes</h3>
-
-    </div>
+    <h3 class="col-sm-12 mt-4 mb-4 border-left border-info text-left">Clientes</h3>
     <div class="table-responsive">
       <table class="table table-striped table-scrollable table-dark text-center rounded">
         <thead>
