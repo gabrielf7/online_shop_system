@@ -47,14 +47,14 @@
           <div class="modal-body">
             <form action="new_category.php" method="POST">
               <div class="form-group">
-                <label for="">Nome</label>
+                <label>Nome</label>
   
                 <input class="form-control" type="text" name="name_category" placeholder="Digite o nome da categoria..." alt="Informe o nome da categoria" required>
   
               </div>
   
               <div class="form-group">
-                <label for="">Descrição</label>
+                <label>Descrição</label>
   
                 <textarea class="form-control" type="textarea" name="description_category" placeholder="Digite algumas informações..." alt="Informe algumas informações sobre o produto" row="4" required></textarea>
   
@@ -93,7 +93,7 @@
             <div class="modal-body">
               <form action="new_product.php" method="POST">
                 <div class="form-group">
-                  <label for="">Nome do Produto</label>
+                  <label>Nome do Produto</label>
   
                   <input class="form-control" type="text" name="name_product" placeholder="Digite o nome do produto..." 
                   alt="Informe o nome do produto" required>
@@ -101,7 +101,7 @@
                 </div>
   
                 <div class="form-group">
-                  <label for="">Descrição</label>
+                  <label>Descrição</label>
   
                   <textarea class="form-control" type="textarea" name="description_product" placeholder="Digite algumas informações..."
                   alt="Informe algumas informações sobre o produto" row="4" required></textarea>
@@ -109,7 +109,7 @@
                 </div>
   
                 <div class="form-group">
-                  <label for="">Categoria</label>
+                  <label>Categoria</label>
   
                   <select class="form-control" type="text" name="id_category" alt="Informe o nome da categoria" required>
                     <?php
@@ -129,14 +129,14 @@
                 </div>
   
                 <div class="form-group">
-                  <label for="">Valor</label>
+                  <label>Valor</label>
   
                   <input class="form-control" type="float" name="value_product" placeholder="Digite o valor do produto..." alt="Informe o valor do produto" required>
   
                 </div>
   
                 <div class="form-group">
-                  <label for="">Estoque</label>
+                  <label>Estoque</label>
   
                   <input class="form-control" type="number" name="stock_product" min=1 placeholder="Digite o número no estoque..." alt="Informe o número no estoque" required>
   
@@ -177,15 +177,15 @@
           <div class="modal-body">
             <form action="new_sale.php" method="POST">
               <div class="form-group">
-                  <label for="">ID do Cliente</label>
+                <label>ID do Cliente</label>
 
-                  <input class="form-control" type="text" name="id_client" placeholder="Digite o número do ID..." 
-                  alt="Informe o ID do cliente" required>
+                <input class="form-control" type="text" name="id_client" placeholder="Digite o número do ID..." 
+                alt="Informe o ID do cliente" required>
 
               </div>
 
               <button type="submit" class="btn btn-my6-color">
-                  Confirmar
+                Confirmar
               </button>
 
             </form>

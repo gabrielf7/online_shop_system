@@ -106,7 +106,7 @@
             <div class="modal-body">
               <form action="new_search_client.php" method="POST">
                 <div class="form-group">
-                    <label for="">Digite o CPF</label>
+                    <label>Digite o CPF</label>
 
                     <input class="form-control" type="text" name="client_cpf" placeholder="Digite o número do CPF..." alt="Informe seu CPF" required>
                 </div>
@@ -144,84 +144,84 @@
               <div class="modal-body">
                 <form action="new_client.php" method="POST">
                   <div class="form-group">
-                    <label for="">Nome</label>
+                    <label>Nome</label>
 
                     <input class="form-control" type="text" name="name_client" placeholder="Digite o nome de usuário..." alt="Informe seu nome de usuário" required>
 
                   </div>
 
                   <div class="form-group">
-                    <label for="">Sobrenome</label>
+                    <label>Sobrenome</label>
 
                     <input class="form-control" type="text" name="surname_client" placeholder="Digite a seu Sobrenome..." alt="Informe seu sobrenome" required>
 
                   </div>
 
                   <div class="form-group">
-                    <label for="">Telefone</label>
+                    <label>Telefone</label>
 
                     <input class="form-control" type="text" name="phone_client" placeholder="Digite seu número..." alt="Informe seu número" required>
 
                   </div>
 
                   <div class="form-group">
-                    <label for="">Celular</label>
+                    <label>Celular</label>
 
                     <input class="form-control" type="text" name="smartphone_client" placeholder="Digite seu número..." alt="Informe seu número" required>
 
                   </div>
 
                   <div class="form-group">
-                    <label for="">CPF</label>
+                    <label>CPF</label>
 
                     <input class="form-control" type="text" name="cpf_client" placeholder="Digite o CPF..." alt="Informe seu CPF" required>
 
                   </div>
 
                   <div class="form-group">
-                    <label for="">E-MAIL</label>
+                    <label>E-MAIL</label>
 
                     <input class="form-control" type="text" name="email_client" placeholder="Digite o seu e-mail..." alt="Informe seu e-mail" required>
 
                   </div>
 
                   <div class="form-group">
-                    <label for="">Rua</label>
+                    <label>Rua</label>
 
                     <input class="form-control" type="text" name="street_client" placeholder="Digite o nome da sua Rua..." alt="Informe o nome da sua Rua">
 
                   </div>
 
                   <div class="form-group">
-                    <label for="">Número da casa</label>
+                    <label>Número da casa</label>
 
                     <input class="form-control" type="text" name="number_client" placeholder="Digite o número da casa..." alt="Informe o número da casa" required>
 
                   </div>
 
                   <div class="form-group">
-                    <label for="">Bairro</label>
+                    <label>Bairro</label>
 
                     <input class="form-control" type="text" name="neighborhood_client" placeholder="Digite o nome do bairro..." alt="Informe o nome do Bairro" required>
 
                   </div>
 
                   <div class="form-group">
-                    <label for="">Cidade</label>
+                    <label>Cidade</label>
 
                     <input class="form-control" type="text" name="city_client" placeholder="Digite o nome da sua cidade..." alt="Informe o nome da sua cidade" required>
 
                   </div>
 
                   <div class="form-group">
-                    <label for="">Estado</label>
+                    <label>Estado</label>
 
                     <input class="form-control" type="text" name="state_client" placeholder="Digite o nome do seu estado..." alt="Informe o nome do seu estado" required>
 
                   </div>
 
                   <div class="form-group">
-                    <label for="">CEP</label>
+                    <label>CEP</label>
 
                     <input class="form-control" type="text" name="cep_client" placeholder="Digite  o nome do CEP..." alt="Informe  o nome do CEP" required>
 

@@ -10,9 +10,9 @@
   
   <div class="container my_container_main mt-5">
 
-    <form action="" method="POST">
+    <form method="POST">
       <div class="my-button-search col-lg-4 border border-0 rounded-top text-center"> 
-        <label class="pt-1" for="">Buscar por CPF</label>
+        <label class="pt-1">Buscar por CPF</label>
 
       </div>
       <div class="form-inline mt-3">
