@@ -4,7 +4,7 @@
   
 </div>
 
-[![licence mit](https://img.shields.io/badge/licence-MIT-purple.svg)](https://github.com/gabrielf7/online_shop_system/blob/master/LICENSE)
+[![licence mit](https://img.shields.io/badge/licence-MIT-green.svg)](https://github.com/gabrielf7/online_shop_system/blob/master/LICENSE)
 
 <div align="center">
   
@@ -26,7 +26,16 @@
   <a href="https://getbootstrap.com/docs/4.5/getting-started/introduction/">Bootstrap</a>
 </p>
 
-loading...
+<div align="center">
+  
+  <h2>Veja mais</h2>
+  
+  <p>Assista o vídeo postado no Linkedin</p>
+  
+  <a href="https://www.linkedin.com/posts/activity-6712891914221322240-Yfdd" target="_blank" alt="Link para o Linkedin sobre o projeto">Clique Aqui!</a>
+
+</div>
+
 
 ## Create by 
 
