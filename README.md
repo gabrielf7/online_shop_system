@@ -26,9 +26,9 @@
   <a href="https://getbootstrap.com/docs/4.5/getting-started/introduction/">Bootstrap</a>
 </p>
 
-## Requirements for Getting Started
+## Requirements
 
-#####Have knowledge about Git and install these technologies
+##### Have knowledge about Git and install these technologies
 
 * To install XAMPP:
 >    [XAMPP](https://www.apachefriends.org/index.html)
