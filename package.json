@@ -1,13 +1,13 @@
 {
   "name": "online_shop_system",
   "version": "1.0.0",
-  "description": "",
+  "description": "Online Store inspired system",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "scss-i": "sass --watch node_modules/bootstrap/scss:node_modules/bootstrap/compile styles/scss:styles/css"
   },
-  "author": "",
+  "author": "João_Gabriel",
   "license": "ISC",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.14.0",
