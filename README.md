@@ -45,7 +45,7 @@
 * Clone the repository with git in a specific XAMPP folder called "htdocs", 
 * which is located in "xampp \ htdocs" within your operating system, 
 * through the / cmd terminal run this command:
->    $ git clone https://github.com/gabrielf7/the-hero-case-semanaomnistack11
+>    $ git clone https://github.com/gabrielf7/online_shop_system
 * To access Online Shop System:
 >    $ cd online_shop_system
 * To create node_modules online_shop_system:
